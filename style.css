@@ -1,0 +1,429 @@
+/** general **/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+/** nav **/
+
+.navbar-default {
+	font-family: 'Montserrat';
+	background: #FFFFFF;
+	border-bottom-color: #3d3d3d;
+	height: 60px;
+	margin-bottom: 0;
+}
+
+.navbar-header .navbar-toggle {
+	margin-top: 12px;
+}
+
+.navbar-header .navbar-brand {
+	color: #3d3d3d;
+	letter-spacing: -2px;
+	height: 60px;
+	padding: 30px 10px 0 10px;
+	line-height: 0px;
+	font-size: 30px;
+	font-weight: 700;
+	white-space: nowrap;
+}
+
+.navbar-default .navbar-brand:hover {
+	color: #439dd9;
+}
+
+.navbar-default .navbar-nav {
+	background: #FFF;
+	margin-top: 0;
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: #3d3d3d;
+	font-size: 20px;
+	padding: 10px;
+	border-bottom: 1px solid #3d3d3d;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+	color: #439dd9;
+}
+
+/** home **/
+
+#home {
+	background: url('http://res.cloudinary.com/dcgoings/image/upload/v1466984946/wallhaven-233516_-_Copy-min_btziyc.jpg') no-repeat center center fixed;
+	/*scroll vs fixed?*/
+	background-size: cover;
+	text-align: center;
+	min-height: 100vh;
+	border-bottom: 1px solid #3d3d3d;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 500;
+	color: white;
+}
+
+#home h1 {
+	font-size: 42px;
+	display: inline-block;
+	text-shadow: 2px 2px #000;
+}
+
+#home h1:after {
+	content: '';
+	display: block;
+	border-bottom: 1px solid white;
+	padding-top: 3px;
+}
+
+#home h5 {
+	font-size: 20px;
+	text-shadow: 2px 2px #000;
+	margin-top: 0px;
+}
+
+.name {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	text-align: center;
+	margin: auto;
+	height: 50px;
+}
+
+.scrollDown {
+	position: absolute;
+	bottom: 2em;
+	width: 100%;
+	-webkit-animation-delay: 1.3s;
+	animation-delay: 1.3s;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	display: block;
+}
+
+.down {
+	display: inline-block;
+	width: 2em;
+	height: 2em;
+	border-top: 1px solid #fff;
+	border-right: 1px solid #fff;
+	border-width: 1px;
+	-webkit-transform: rotate(135deg);
+	transform: rotate(135deg);
+}
+
+/** about **/
+
+#about {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 500;
+	color: #3d3d3d;
+	text-align: center;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	height: 100%;
+}
+
+#about h1 {
+	font-size: 36px;
+	display: inline-block;
+}
+
+#about h1:after {
+	content: '';
+	display: block;
+	border-bottom: 1px solid #3d3d3d;
+	padding-top: 3px;
+}
+
+#about p {
+	font-size: 20px;
+	margin-top: 0px;
+	padding-bottom: 25px;
+}
+
+hr {
+	background-color: #3d3d3d;
+	height: 1px;
+	border: none;
+	text-align: right;
+	margin-left: 25%;
+	margin-right: 25%;
+}
+
+#skills {
+	font-size: 70px;
+	padding-top: 25px;
+}
+
+/** portfolio **/
+
+#portfolio {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 500;
+	color: white;
+	background-color: #3d3d3d;
+	text-align: center;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	border-top: 1px solid #3d3d3d;
+}
+
+#portfolio h1 {
+	font-size: 36px;
+	display: inline-block;
+}
+
+#portfolio h1:after {
+	content: '';
+	display: block;
+	border-bottom: 1px solid white;
+	padding-top: 3px;
+}
+
+#portfolio h3 {
+	font-size: 20px;
+	margin-top: 0px;
+	padding-bottom: 0px;
+}
+
+/** previous thumbnail structure
+.thumbs ul>li {
+	position: relative;
+	display: inline-block;
+}
+
+.thumbs ul>li>a {
+	position: relative;
+	display: block;
+	padding: 10px;
+	overflow: hidden;
+}
+
+.thumbs ul>li>a>img {
+	position: relative;
+	z-index: 1;
+	height: 100%;
+	width: 100%;
+	background: rgba(24, 188, 156, .9);
+}
+
+.thumbs ul>li>a>img:hover {
+	opacity: .1;
+	-webkit-transition: all ease .5s;
+	-moz-transition: all ease .5s;
+	transition: all ease .5s;
+	background: rgba(24, 188, 156, .9);
+}
+
+end of previous thumbnail structure **/
+
+/** thumbnail effects **/
+
+.grid {
+	max-width: 1300px;
+	margin: 0 auto;
+	list-style: none;
+	text-align: center
+}
+
+.grid li {
+	display: inline-block;
+	margin: 0;
+	padding: 20px;
+	text-align: left;
+	position: relative;
+}
+
+.grid figure {
+	margin: 0;
+	position: relative;
+}
+
+.grid figure img {
+	max-width: 100%;
+	display: block;
+	position: relative;
+}
+
+.grid figcaption {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 20% 0px 0px 0px;
+	background: #2c3f52;
+	color: #439dd9;
+}
+
+.grid figcaption h3 {
+	margin: 0;
+	padding: 0;
+	color: #fff;
+}
+
+.grid figcaption span:before {
+	content: 'by '
+}
+
+.grid figcaption a {
+	text-align: center;
+	padding: 5px 10px;
+	border-radius: 2px;
+	display: inline-block;
+	background: #439dd9;
+	color: #fff;
+}
+
+.cs-style-1 figcaption {
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	text-align: center;
+	backface-visibility: hidden;
+	transition: transform 0.3s, opacity 0.3s;
+}
+
+.cs-style-1 figcaption:hover {
+	opacity: .9;
+}
+
+/** may not need 
+
+.cs-style-1 figcaption h3 {
+	margin-top: 70px;
+}
+
+.cs-style-1 figcaption span {
+	display: block;
+}
+
+.cs-style-1 figcaption a {
+	margin-top: 30px;
+}
+
+**/
+
+.shadow {
+	-moz-box-shadow: 2px 2px 15px #ccc;
+	-webkit-box-shadow: 2px 2px 15px #ccc;
+	box-shadow: 2px 2px 15px #000;
+}
+
+
+/** contact **/
+
+#contact {
+	background-color: #0b3658;
+	color: white;
+	font-family: 'Raleway', sans-serif;
+	text-align: center;
+	font-weight: 500;
+}
+
+.contact-icon {
+	color: white;
+	font-size: 60px;
+	padding: 60px 30px;
+}
+
+.ion-paper-airplane:hover {
+	color: #bb0000;
+}
+
+.fa-paper-plane:hover {
+	color: #bb0000;
+}
+
+.fa-codepen:hover {
+	color: black;
+}
+
+.fa-linkedin:hover {
+	color: #007bb5;
+}
+
+.fa-fire:hover {
+	color: #006400;
+}
+
+.fa-github:hover {
+	color: black;
+}
+
+/** footer **/
+
+footer {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 500;
+	background-color: #0b3658;
+	color: white;
+	text-align: center;
+	padding: 5px;
+}
+
+/** media queries **/
+
+@media screen and (max-width: 768px) {
+	.contact-icon {
+		padding: 30px 5px;
+		font-size: 40px;
+	}
+	#skills {
+		font-size: 60px;
+	}
+	#about h1 {
+		font-size: 30px;
+		display: inline-block;
+	}
+	#about p {
+		font-size: 16px;
+		margin-top: 0px;
+		padding-bottom: 20px;
+	}
+	#about i {
+		font-size: 60px;
+	}
+	#portfolio h1 {
+		font-size: 30px;
+	}
+	#portfolio h3 {
+		font-size: 16px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.navbar-default {
+		height: 100px;
+	}
+	.navbar-header {
+		width: 100%;
+	}
+	.navbar-header .navbar-brand {
+		height: 70px;
+		padding: 40px 0 0 15px;
+		font-size: 42px;
+	}
+	.navbar-default .navbar-nav>li>a {
+		padding: 0px 20px 9px 0;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.navbar-default {
+		height: 120px;
+	}
+	.navbar-header .navbar-brand {
+		height: 80px;
+		padding: 45px 0 0 15px;
+		font-size: 48px;
+	}
+	.navbar-default .navbar-nav>li>a {
+		padding: 10px 25px 9px 0;
+	}
+}
